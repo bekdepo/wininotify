@@ -4,11 +4,11 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=
-ClassGuid=
-Provider=
-DriverVer=
-CatalogFile=
+Class="SecurityEnhancer"
+ClassGuid="{d02bc3da-0c8e-4945-9bd5-f1883c226c8c}"
+Provider=debojyoti.majumder@gmail.com
+DriverVer="0.0.1"
+CatalogFile=testsign.cat
 
 [DestinationDirs]
 DefaultDestDir = 12
@@ -27,6 +27,6 @@ DefaultDestDir = 12
 
 
 [Strings]
-ManufacturerName=""
-ClassName=""
+ManufacturerName="Debojyoti Majumder"
+ClassName="SecurityEnhancer"
 DiskName="wininotifyDriver Source Disk"
