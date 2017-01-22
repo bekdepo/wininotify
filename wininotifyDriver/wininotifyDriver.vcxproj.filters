@@ -27,9 +27,18 @@
     <ClCompile Include="FsEntry.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="winnotifyInstance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="winnotifyFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winnotifyInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winnotifyRegistartion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

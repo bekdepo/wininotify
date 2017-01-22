@@ -146,9 +146,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FsEntry.c" />
+    <ClCompile Include="winnotifyInstance.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="winnotifyFilter.h" />
+    <ClInclude Include="winnotifyInstance.h" />
+    <ClInclude Include="winnotifyRegistartion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
