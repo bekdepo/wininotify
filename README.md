@@ -1,2 +1,2 @@
 # wininotify
-A library/utility to give features like inotify(of Linux) like capability in windows through a filter driver 
+A library/utility to give features like inotify(of Linux) like capability in windows through a filter driver. This project is still under development.
