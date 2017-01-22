@@ -1,4 +1,5 @@
 #include <fltKernel.h>
+#include "winnotifyFilter.h"
 
 DRIVER_INITIALIZE DriverEntry;
 
@@ -42,5 +43,7 @@ NTSTATUS DriverEntry( PDRIVER_OBJECT pDriverObject,
 	UNREFERENCED_PARAMETER(pDriverObject);
 	UNREFERENCED_PARAMETER(pRegistryPath);
 
+	RtlZeroMemory(&GlobalData, sizeof(GlobalData));
+	
 	return STATUS_SUCCESS;
 }
