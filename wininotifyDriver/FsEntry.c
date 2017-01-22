@@ -63,11 +63,17 @@ NTSTATUS winnotifyInstanceSetup(
 NTSTATUS DriverEntry( PDRIVER_OBJECT pDriverObject,
 					  PUNICODE_STRING pRegistryPath ) 
 {
-	UNREFERENCED_PARAMETER(pDriverObject);
+	NTSTATUS status = STATUS_SUCCESS;
+
 	UNREFERENCED_PARAMETER(pRegistryPath);
 
 	// Initlizing the global data
 	RtlZeroMemory(&GlobalData, sizeof(GlobalData));
 	
-	return STATUS_SUCCESS;
+	// Registering the filter driver
+	status = FltRegisterFilter(pDriverObject,
+				&FilterRegistration,
+				&GlobalData.filter);
+
+	return status;
 }
