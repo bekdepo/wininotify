@@ -43,6 +43,7 @@ NTSTATUS DriverEntry( PDRIVER_OBJECT pDriverObject,
 	UNREFERENCED_PARAMETER(pDriverObject);
 	UNREFERENCED_PARAMETER(pRegistryPath);
 
+	// Initlizing the global data
 	RtlZeroMemory(&GlobalData, sizeof(GlobalData));
 	
 	return STATUS_SUCCESS;
